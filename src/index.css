@@ -13,7 +13,7 @@ body {
     background-color: var(--gris-claro);
 }
 html {
-    font-size: 62.5%;
+    font-size: 50%;
     box-sizing: border-box;
 }
 *,
@@ -185,6 +185,14 @@ header h1 {
 .formulario input[type="number"].nuevo-presupuesto {
     font-size: 2.8rem;
     text-align: center;
+    width: 100%;
+}
+
+@media (max-width : 480px) {
+    .formulario input[type="text"].nuevo-presupuesto, 
+    .formulario input[type="number"].nuevo-presupuesto {
+        font-size: 2.8rem;
+    }
 }
 
 .contenedor-presupuesto svg {
